@@ -122,7 +122,7 @@
     project.json = projectJSON;
     await convertProject();
     await project.zip.file('project.json', JSON.stringify(project.json));
-    alert('Project converted!\nIf you have any issues please tell me on the github :P.\nhttps://github.com/yuri-kiss/ReturnBlockConverter');
+    alert('Project converted!\nIf you have any issues please tell me on the github :P.\nhttps://github.com/surv-is-a-dev/ReturnBlockConverter');
     project.zip.generateAsync({ type: 'base64' }).then(function(base64) {
       if (clearOnFinish) {
         project.json = null;
